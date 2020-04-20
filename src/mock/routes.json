@@ -1,0 +1,8 @@
+{
+	"/api/test": "/test",
+	"/api/logins": "/logins",
+	"/api/filters": "/filters",
+	"/api/lists": "/lists",
+	"/api/details": "/details",
+	"/api/cwq": "/cwq-mock/list"
+}

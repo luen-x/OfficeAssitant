@@ -1,0 +1,110 @@
+<template>
+	<i-tabs
+		:value="type"
+		:animated="false"
+		type="card"
+		style="margin-top: 20px"
+		@on-click="handleChange"
+	>
+		<i-tab-pane
+			v-for="(item) in tabs"
+			:key="item.value"
+			:label="item.label"
+			:name="item.value"
+		>
+			<vc-paging
+				:columns="columns"
+				:show="item.value == type"
+				:type="item.value"
+				:data-source="listInfo[item.value].data"
+				:total="listInfo[item.value].total"
+				:reset="listInfo[item.value].reset"
+				:current.sync="current[item.value]"
+				:history="true"
+				:load-data="loadData"
+				:table-opts="{height: tableHeight,highlightRow: true}"
+				class="v-hr-personnel-currency-list"
+				mode="table"
+				@page-size-change="handleChangePageSize"
+			/>
+		</i-tab-pane>
+	</i-tabs>
+</template>
+
+<script>
+import { Tabs, TabPane } from 'iview';
+import { Paging } from 'wya-vc';
+import { getParseUrl, getHashUrl } from '@utils/utils';
+import { tableHeight } from '@extends/mixins/tableHeight';
+
+// item
+import item from './item';
+
+export default {
+	name: 'oa-table',
+	components: {
+		'vc-paging': Paging,
+		'i-tabs': Tabs,
+		'i-tab-pane': TabPane,
+	},
+	mixins: [item, tableHeight({ 
+		nav2: false, 
+		extraClass: ['v-hr-pesonnel-currency-head'],
+		extra: 10 
+	})],
+	data() {
+		const { query } = this.$route;
+		return {
+			type: String(query.type || "0"), // 同tabs下的value
+			current: {},
+			tabs: [
+				{ label: '待结算', value: '0' },
+				{ label: '已结算', value: '1' },
+				{ label: '已失效', value: '2' }
+			],
+		};
+	},
+	computed: {
+		listInfo() {
+			return this.$store.state.hrPersonnelCurrency.listInfo;
+		}
+	},
+	methods: {
+		loadData(page, pageSize) {
+			let { query = {} } = getParseUrl();
+			return this.request({
+				url: 'HR_PERSONNEL_CURRENCY_LIST_GET',
+				type: 'GET',
+				param: {
+					...query,
+					type: this.type,
+					page,
+					pageSize,
+				},
+				// initList: data => { return [...data, ...data, ...data, ...data, ...data]; }
+			}).then((res) => {
+				
+			}).catch(console.error);
+		},
+		handleChange(type) {
+			this.type = type;
+
+			let { query = {} } = getParseUrl(); // this.$route需要设置paging.sync
+			query = {
+				...query,
+				type,
+				page: this.current[type]
+			};
+			this.$router.replace(getHashUrl('/hr/personnel/currency', { ...query }));
+		},
+		handleChangePageSize() {
+			this.$store.commit('HR_PERSONNEL_CURRENCY_LIST_INIT');
+		}
+	}
+};
+
+</script>
+
+<style lang="scss">
+
+</style>

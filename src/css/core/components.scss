@@ -1,0 +1,235 @@
+@import "./color.scss";
+
+/**
+ * tip
+ */
+.g-tip-small {
+	height: 22px;
+	line-height: 22px;
+	padding: 0 8px;
+	font-size: 12px;
+	border-radius: 10px;
+}
+.g-orange-tip-small {
+	@extend .g-tip-small;
+	background-color: #fbefe3;
+	border: 1px solid #ffba7f;
+}
+.g-blue-tip-small {
+	@extend .g-tip-small;
+	background-color: #dfeffe;
+	border: 1px solid #91cbfd;
+}
+.g-red-tip-small {
+	@extend .g-tip-small;
+	background-color: #fee0e0;
+	border: 1px solid #fd929a;
+}
+
+/**
+ * button
+ */
+.g-red-btn-text {
+	display: block;
+	width: 60px;
+	height: 32px;
+	line-height: 32px;
+	color: #333 !important;
+	font-size: 14px;
+	text-align: center;
+	white-space: nowrap;
+	user-select: none !important;
+	cursor: pointer;
+	&:hover {
+		color: #e84c57 !important;
+	}
+	&:active {
+		color: $redDark !important;
+	}
+}
+.g-red-btn-small {
+	display: block;
+	width: 60px;
+	height: 32px;
+	line-height: 32px;
+	background-color: #e84c57;
+	color: #fff !important;
+	border-radius: 4px;
+	font-size: 14px;
+	text-align: center;
+	white-space: nowrap;
+	user-select: none !important;
+	cursor: pointer;
+	&:hover {
+		background-color: $redLight;
+	}
+	&:active {
+		background-color: $redDark;
+	}
+}
+.g-gray-btn-small {
+	display: block;
+	width: 60px;
+	height: 30px;
+	line-height: 30px;
+	background-color: #fff;
+	color: #333 !important;
+	border: 1px solid #d4d7d8;
+	border-radius: 4px;
+	font-size: 14px;
+	text-align: center;
+	box-sizing: content-box;
+	white-space: nowrap;
+	user-select: none !important;
+	cursor: pointer;
+	&:hover {
+		border: 1px solid #e84c57;
+		color: #e84c57 !important;
+	}
+	&:active {
+		border: 1px solid $redDark;
+		color: $redDark !important;
+	}
+}
+.g-red-btn {
+	display: block;
+	height: 32px;
+	line-height: 32px;
+	padding: 0 15px;
+	background-color: #e84c57;
+	color: #fff !important;
+	border-radius: 4px;
+	font-size: 14px;
+	text-align: center;
+	white-space: nowrap;
+	user-select: none !important;
+	cursor: pointer;
+	&:hover {
+		background-color: $redLight;
+	}
+	&:active {
+		background-color: $redDark;
+	}
+}
+.g-gray-btn-line {
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 15px;
+	background-color: #fff;
+	border-radius: 4px;
+	border: 1px solid #d4d7d8;
+	color: #333;
+	font-size: 14 px;
+	box-sizing: content-box;
+	white-space: nowrap;
+	user-select: none !important;
+	cursor: pointer;
+	&:hover {
+		border: 1px solid #e84c57;
+		color: #e84c57;
+	}
+	&:active {
+		border: 1px solid $redDark;
+		color: $redDark;
+	}
+}
+.g-gray-btn-dash {
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 15px;
+	background-color: #fff;
+	border-radius: 4px;
+	border: 1px dashed #d4d7d8;
+	color: #333;
+	font-size: 14 px;
+	box-sizing: content-box;
+	white-space: nowrap;
+	user-select: none !important;
+	cursor: pointer;
+	&:hover {
+		border: 1px dashed #e84c57;
+		color: #e84c57;
+	}
+	&:active {
+		border: 1px dashed $redDark;
+		color: $redDark;
+	}
+}
+.g-red-btn-line {
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 15px;
+	background-color: #fff;
+	border-radius: 4px;
+	border: 1px solid #e84c57;
+	color: #e84c57 !important;
+	font-size: 14 px;
+	box-sizing: content-box;
+	white-space: nowrap;
+	user-select: none !important;
+	cursor: pointer;
+	&:hover {
+		background-color: #e84c57;
+		border: 1px solid #e84c57;
+		color: #fff !important;
+	}
+	&:active {
+		background-color: $redDark;
+		border: 1px solid $redDark;
+		color: #fff !important;
+	}
+}
+.g-disabled-btn {
+	display: block;
+	height: 32px;
+	line-height: 32px;
+	padding: 0 15px;
+	background-color: #e5e5e5;
+	color: #4e4f54 !important;
+	border-radius: 4px;
+	font-size: 14px;
+	text-align: center;
+	white-space: nowrap;
+	user-select: none !important;
+	cursor: not-allowed;
+}
+
+/**
+ * avatar
+ */
+.g-avatar-76 {
+	width: 76px;
+	height: 76px;
+	border: 1px solid #d4d7db;
+	border-radius: 38px;
+	overflow: hidden;
+}
+.g-avatar-40 {
+	width: 40px;
+	height: 40px;
+	border: 1px solid #d4d7db;
+	border-radius: 20px;
+	overflow: hidden;
+}
+.g-avatar-30 {
+	width: 30px;
+	height: 30px;
+	border: 1px solid #d4d7db;
+	border-radius: 15px;
+	overflow: hidden;
+}
+
+/**
+ * 备注
+ */
+.g-remark {
+	display: inline-block;
+	padding: 0 8px;
+	border-radius: 2px;
+	background-color: $redMid;
+	color: #fff;
+	font-size: 12px;
+}

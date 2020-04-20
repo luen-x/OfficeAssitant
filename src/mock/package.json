@@ -1,0 +1,5 @@
+{
+	"scripts": {
+		"start:win": "json-server db.js"
+	}
+}

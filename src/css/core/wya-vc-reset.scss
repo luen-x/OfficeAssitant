@@ -1,0 +1,70 @@
+.pswp {
+	z-index: 9999 !important;
+}
+.vc-paging {
+	margin-bottom: 30px;
+	.__footer {
+		position: fixed;
+		height: 45px;
+		bottom: 0;
+		right: 0;
+		width: calc(100% - 160px) !important;
+		background: #fff;
+		box-shadow: 0 -2px 9.9px 0.1px rgba(0, 0, 0, 0.08);
+		z-index: 800;
+		padding-left: 38px !important;
+	}
+	.__top-row {
+		background: rgba(249, 246, 240, 1);
+		td {
+			background: transparent !important;
+		}
+	}
+	.ivu-table-row-highlight {
+		background: #dae2f0 !important;
+	}
+}
+.vcp-imgs-picker .__normal {
+	width: 74px !important;
+	height: 74px !important;
+	border-radius: 0 !important;
+}
+.vcp-imgs-picker .__normal .__img {
+	width: 72px !important;
+	height: 72px !important;
+	// border: 1px solid #d4d7d4;
+}
+.vcp-imgs-picker .__item {
+	// border: 0 none !important;
+	padding: 0 !important;
+}
+.vcp-imgs-picker .__mask {
+	justify-content: center;
+	span {
+		font-size: 12px;
+		margin: 4px;
+	}
+}
+.vc-imgs-preview {
+	img {
+		display: block;
+		width: 72px !important;
+		height: 72px !important;
+		border: 1px solid #d4d7d4;
+	}
+	.__item {
+		margin-right: 10px !important;
+	}
+}
+// 富文本
+.ql-editor {
+	em {
+		font-style: italic;
+	}
+	p {
+		word-break: break-all;
+	}
+}
+[class*="g-bg-"] input {
+	color: #333;
+}

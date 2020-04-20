@@ -1,0 +1,381 @@
+@import "core/index";
+
+/* color */
+.g-c-pink {
+	color: #fb8ffb !important;
+}
+.g-c-yellow {
+	color: #fbb837 !important;
+}
+.g-c-red-light {
+	color: $redLight !important;
+}
+.g-c-red-mid {
+	color: $redMid !important;
+}
+.g-c-red-dark {
+	color: $redDark !important;
+}
+.g-c-blue-light {
+	color: $blueLight !important;
+}
+.g-c-blue-mid {
+	color: $blueMid !important;
+}
+.g-c-blue-dark {
+	color: $blueDark !important;
+}
+.g-c-orange-light {
+	color: $orangeLight !important;
+}
+.g-c-orange-mid {
+	color: $orangeMid !important;
+}
+.g-c-orange-dark {
+	color: $orangeDark !important;
+}
+.g-c-green-light {
+	color: $greenLight !important;
+}
+.g-c-green-mid {
+	color: $greenMid !important;
+}
+.g-c-green-dark {
+	color: $greenDark !important;
+}
+
+// black
+.g-c-black1 {
+	color: $black1 !important;
+}
+.g-c-black2 {
+	color: $black2 !important;
+}
+.g-c-black3 {
+	color: $black3 !important;
+}
+.g-c-black4 {
+	color: $black4 !important;
+}
+.g-c-black5 {
+	color: $black5 !important;
+}
+.g-c-black6 {
+	color: $black6 !important;
+}
+.g-c-black7 {
+	color: $black7 !important;
+}
+
+.g-c-light1 {
+	color: $light1 !important;
+}
+.g-c-light2 {
+	color: $light2 !important;
+}
+.g-c-light3 {
+	color: $light3 !important;
+}
+.g-c-light4 {
+	color: $light4 !important;
+}
+.g-c-light5 {
+	color: $light5 !important;
+}
+.g-c-light6 {
+	color: $light6 !important;
+}
+.g-c-light7 {
+	color: $light7 !important;
+}
+
+/* background */
+.g-bg-red-light {
+	background-color: $redLight !important;
+}
+.g-bg-red-mid {
+	background-color: $redMid !important;
+}
+.g-bg-red-dark {
+	background-color: $redDark !important;
+}
+.g-bg-blue-light {
+	background-color: $blueLight !important;
+}
+.g-bg-blue-mid {
+	background-color: $blueMid !important;
+}
+.g-bg-blue-dark {
+	background-color: $blueDark !important;
+}
+.g-bg-orange-light {
+	background-color: $orangeLight !important;
+}
+.g-bg-orange-mid {
+	background-color: $orangeMid !important;
+}
+.g-bg-orange-dark {
+	background-color: $orangeDark !important;
+}
+.g-bg-green-light {
+	background-color: $greenLight !important;
+}
+.g-bg-green-mid {
+	background-color: $greenMid !important;
+}
+.g-bg-green-dark {
+	background-color: $greenDark !important;
+}
+
+.g-bg-light3 {
+	background-color: $light3 !important;
+}
+
+.g-m-b-10 {
+	margin-bottom: 10px !important;
+}
+
+.g-m-t-24 {
+	margin-top: 24px;
+}
+.g-m-t-40 {
+	margin-top: 40px;
+}
+.g-m-b-25 {
+	margin-bottom: 25px;
+}
+.g-m-b-12 {
+	margin-bottom: 12px;
+}
+.g-m-b-40 {
+	margin-bottom: 40px;
+}
+.g-m-l-60 {
+	margin-left: 60px;
+}
+.g-m-l-40 {
+	margin-left: 40px;
+}
+.g-m-r-40 {
+	margin-right: 40px;
+}
+.g-m-r-60 {
+	margin-right: 60px;
+}
+
+.g-pd-t-25 {
+	padding-top: 25px;
+}
+.g-pd-b-25 {
+	padding-bottom: 25px;
+}
+.g-pd-lr-25 {
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.g-pd-t-50 {
+	padding-top: 50px !important;
+}
+.g-bold {
+	font-weight: 500 !important;
+}
+.g-lh-14 {
+	line-height: 14px;
+}
+.g-lh-16 {
+	line-height: 16px;
+}
+
+// box shadow
+.g-box-shadow {
+	box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.1);
+}
+.g-operation {
+	color: #2296f9 !important;
+	font-size: 12px;
+	cursor: pointer;
+}
+.g-operation-disable {
+	color: #bbb !important;
+	font-size: 12px;
+	cursor: not-allowed;
+}
+.g-operation-hover {
+	cursor: pointer;
+	display: inline-block;
+	transition: color 0.2s ease;
+	font-size: 14px;
+	&:hover {
+		color: $blueMid;
+	}
+}
+.g-hide-scroll {
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}
+
+.g-dark-scroll {
+	&::-webkit-scrollbar { /* 滚动条整体样式 */
+		width: 8px;     /* 高宽分别对应竖横滚动条的尺寸 */
+		height: 6px;
+	}
+	&::-webkit-scrollbar-thumb { /* 滚动条里面小方块 */
+		border-radius: 8px;
+		// box-shadow: 0 0 0 rgba(200,50,50,.3);
+		background-color: rgba(50, 50, 50, 0.6);
+	}
+	// &::-webkit-scrollbar-track { /* 滚动条里面轨道 */
+	// 	box-shadow: 0 0 0 #110a0a;
+	// 	border-radius: 10px;
+	// 	background: #464040;
+	// }
+}
+.g-blue-scroll {
+	&::-webkit-scrollbar { /* 滚动条整体样式 */
+		width: 8px;     /* 高宽分别对应横竖滚动条的尺寸 */
+		height: 6px;
+	}
+	&::-webkit-scrollbar-thumb { /* 滚动条里面小方块 */
+		border-radius: 8px;
+		background: #8cc5f3;
+	}
+	// &::-webkit-scrollbar-track { /* 滚动条里面轨道 */
+	// 	border-radius: 8px;
+	// 	// background: white;
+	// }
+}
+.g-overlay {
+	overflow: auto; // 如果支持 overlay就用overlay，否则使用overflow 火狐不兼容overlay
+	overflow: overlay;
+}
+
+// 全局覆盖滚动条
+// div {
+// 	 // &:hover {
+// 		&::-webkit-scrollbar { /* 滚动条整体样式 */
+// 			width: 8px;     /* 高宽分别对应横竖滚动条的尺寸 */
+// 			height: 8px;
+// 			display: block;
+// 			position: absolute;
+// 		}
+// 		&::-webkit-scrollbar-thumb { /* 滚动条里面小方块 */
+// 			border-radius: 8px;
+// 			box-shadow: 0 0 0 #110a0a;
+// 			background-color: rgba(50,50,50,.3);
+	
+// 		}
+// 		&::-webkit-scrollbar-track { /* 滚动条里面轨道 */
+// 			box-shadow: 0 0 0 #110a0a;
+// 			border-radius: 10px;
+// 			background: #fff;
+// 		}
+// 	// }
+// 	// &::-webkit-scrollbar {
+// 	// 	display: none;
+// 	// }
+// 	// overflow: overlay;
+// }
+
+// 禁止选中文本
+.g-noselect {
+	user-select: none !important;
+}
+
+.g-not-allowed {
+	cursor: not-allowed;
+}
+
+// 单行文本
+.g-oneline {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-break: break-all;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+}
+// 阻止potal收起
+.g-prevent-portal {
+	z-index: inherit;
+}
+.g-form-title {
+	border-left: 2px #e74854 solid;
+	color: #e74854;
+	padding-left: 10px;
+	line-height: 16px;
+	font-size: 16px;
+}
+.g-detail-title {
+	border-left: 2px #e74854 solid;
+	color: #4b4f57;
+	padding-left: 10px;
+	line-height: 14px;
+	font-size: 14px;
+}
+.g-line {
+	background: #ebeef1;
+	height: 1px;
+}
+.g-rank-index {
+	background: rgba(255, 222, 225, 1);
+	border-radius: 3px;
+	min-width: 20px;
+	padding: 0 5px;
+	height: 20px;
+	display: inline-block;
+	color: #ff7f7f;
+	text-align: center;
+	&._rank-0 {
+		background: #ff4747;
+		color: white;
+	}
+	&._rank-1 {
+		background: #ff8547;
+		color: white;
+	}
+	&._rank-2 {
+		background: #ffac38;
+		color: white;
+	}
+}
+
+// 媒体查询
+@media screen and (max-width: 1365px) {
+	.v-finance-main-side, .v-hr-main-side, .v-sc-main-side {
+		position: fixed;
+		height: calc(100% - 58px);
+		right: -360px;
+		transition: right 0.3s;
+		box-shadow: -2px 0 9.9px 0.1px rgba(0, 0, 0, 0.08);
+	}
+}
+
+@media screen and (min-width: 1366px) {
+	.v-main-bookmark {
+		display: none;
+	}
+	.v-finance-main-side, .v-hr-main-side, .v-sc-main-side {
+		overflow: visible !important;
+	}
+}
+
+// 商学院首页媒体查询
+@media screen and (max-width: 1795px) {
+	.v-collage-main-side {
+		position: fixed;
+		right: -708px;
+		transition: right 0.3s;
+		box-shadow: -2px 0 9.9px 0.1px rgba(0, 0, 0, 0.08);
+	}
+}
+
+@media screen and (min-width: 1796px) {
+	.v-collage-main-bookmark {
+		display: none;
+	}
+	.v-collage-main-side {
+		overflow: visible !important;
+	}
+}
